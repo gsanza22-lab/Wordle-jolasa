@@ -1,0 +1,258 @@
+:root {
+  --berdea: #6aaa64;
+  --grisa: #787c7e;
+  --horia: #c9b458;
+  --laranja: #f39c12;
+  --atzeko-kolorea: #f5f5f5;
+  --zuria: #ffffff;
+  --beltza: #222222;
+  --ertza: #999999;
+  --urdina: #1a73e8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, sans-serif;
+
+  background-color: white;
+
+  color: var(--beltza);
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+
+  margin: 30px auto;
+
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+
+  margin-bottom: 30px;
+}
+
+/* konfigurazioa */
+
+.konfigurazioa {
+  padding: 25px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.konfigurazioa input {
+  width: 100px;
+
+  margin: 0 auto;
+
+  padding: 8px;
+
+  font-size: 18px;
+
+  text-align: center;
+}
+
+button {
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 10px 24px;
+
+  margin: 10px auto 0 auto;
+
+  background-color: var(--urdina);
+
+  color: var(--zuria);
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* taula */
+
+.taula {
+  display: grid;
+
+  gap: 5px;
+
+  justify-content: center;
+
+  margin: 20px auto;
+}
+
+.laukia {
+  width: 50px;
+  height: 50px;
+
+  border: 2px solid var(--ertza);
+
+  background-color: var(--zuria);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+
+  font-weight: bold;
+
+  text-transform: uppercase;
+}
+
+/* letren koloreak */
+
+.ok {
+  background-color: var(--berdea);
+
+  color: var(--zuria);
+
+  border-color: var(--berdea);
+}
+
+.no {
+  background-color: var(--grisa);
+
+  color: white;
+
+  border-color: var(--grisa);
+}
+
+.existe {
+  background-color: var(--horia);
+
+  color: white;
+
+  border-color: var(--horia);
+}
+
+.errepikatua {
+  background-color: var(--laranja);
+
+  color: white;
+
+  border-color: var(--laranja);
+}
+
+/* teklatu birtuala */
+
+.teklatua {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  align-items: center;
+
+  margin-top: 25px;
+}
+
+.teklatu-lerroa {
+  display: flex;
+
+  gap: 5px;
+}
+
+.teklatua-botoia {
+  width: 40px;
+  height: 45px;
+
+  min-width: auto;
+
+  padding: 0;
+
+  margin: 0;
+
+  background-color: #d3d6da;
+
+  color: var(--beltza);
+
+  font-weight: bold;
+
+  font-size: 14px;
+}
+
+.teklatua-botoia.ok {
+  background-color: var(--berdea);
+}
+
+.teklatua-botoia.no {
+  background-color: var(--grisa);
+}
+
+.teklatua-botoia.existe {
+  background-color: var(--horia);
+}
+
+/* emaitza */
+
+.emaitza {
+  background-color: var(--zuria);
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  margin-top: 20px;
+}
+
+#historiala {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.jokoa-historialean {
+  border: 1px solid #ccc;
+
+  padding: 10px;
+
+  border-radius: 5px;
+
+  text-align: left;
+}
+
+/* ezkutatu */
+
+.ezkutuan {
+  display: none;
+}
+
+/* telefonoetarako */
+
+@media (max-width: 500px) {
+  .laukia {
+    width: 40px;
+    height: 40px;
+
+    font-size: 20px;
+  }
+
+  .teklatua-botoia {
+    width: 30px;
+    height: 40px;
+
+    font-size: 11px;
+  }
+}
